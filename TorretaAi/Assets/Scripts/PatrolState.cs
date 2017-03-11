@@ -43,8 +43,8 @@ public class PatrolState : IEnemyState
         if (Physics.Raycast(enemy.eyes.transform.position, enemy.eyes.transform.right, out hit, enemy.sightRange) && hit.collider.CompareTag("Player"))
         {
             enemy.chaseTarget = hit.transform;
-             Vector3 targetPostition = new Vector3(0,this.enemy.transform.position.y,0);
-             this.enemy.transform.LookAt(targetPostition*-1,Vector3.up);
+            // Vector3 targetPostition = new Vector3(0,this.enemy.transform.position.y,0);
+           //  this.enemy.transform.LookAt(targetPostition*-1,Vector3.up);
 
             enemy.transform.Rotate(0, 0, 0);
 
